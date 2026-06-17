@@ -23,7 +23,7 @@ app.get('/test', (req, res)=>{
 })
 
 app.get('/test-bd', async (req, res)=>{
- const resultado = await pool.query(`SELECT * FROM MENSAJES`)
+ const resultado = await pool.query(`SELECT * FROM mensajes`)
  res.json(resultado.rows)
 })
 
